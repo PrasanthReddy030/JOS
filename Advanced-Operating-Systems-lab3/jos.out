@@ -1,0 +1,52 @@
++ ld obj/kern/kernel
++ mk obj/kern/kernel.img
+6828 decimal is XXX octal!
+Physical memory: 66556K available, base = 640K, extended = 65532K
+boot_alloc memory at f017e000
+Next memory at f017f000
+boot_alloc memory at f017f000
+Next memory at f01a0000
+npages: 16639
+npages_basemem: 160
+pages: f017f000
+boot_alloc memory at f01a0000
+Next memory at f01b8000
+f01b8000
+med=440
+boot_alloc memory at f01b8000
+Next memory at f01b8000
+check_page_free_list done
+check_page_alloc() succeeded!
+so far so good
+pp2 f0180fe8
+kern_pgdir f017e000
+kern_pgdir[0] is 3ff007
+check_page() succeeded!
+Virtual Address ef000000 mapped to Physical Address 17f000
+PADDR(pages) 17f000
+Virtual Address eec00000 mapped to Physical Address 1a0000
+Virtual Address efff8000 mapped to Physical Address 111000
+PADDR(bootstack) 111000
+Virtual Address f0000000 mapped to Physical Address 0
+check_kern_pgdir() succeeded!
+boot_alloc memory at f01b8000
+Next memory at f01b8000
+check_page_free_list done
+check_page_installed_pgdir() succeeded!
+envs: f01a0000, e: f01a0000, e->env_id: 1000
+env_id, 1000
+[00000000] new env 00001000
+p_memsz: 3d3e, p_filesz: 3d3e
+p_memsz: 1034, p_filesz: 1034
+p_memsz: 8, p_filesz: 4
+
+Incoming TRAP frame at 0xefffffbc
+
+Incoming TRAP frame at 0xefffffbc
+user_mem_check va: f010000c, len: 64
+[00001000] user_mem_check assertion failure for va f010000c
+[00001000] free env 00001000
+Destroyed the only environment - nothing more to do!
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.
+qemu: terminating on signal 15 from pid 16141
